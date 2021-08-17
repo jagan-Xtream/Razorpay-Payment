@@ -30,7 +30,7 @@ app.get("/order/:productId", (req, res) => {
   const { productId } = req.params;
   const product = products.find((product) => product.id == productId);
   //rupees 100 dollar 70
-  const amount = product.price * 100 * 70;
+  const amount = product.price  * 70;
   const currency = "INR";
   const receipt = "receipt#123";
   const notes = { desc: product.description };
